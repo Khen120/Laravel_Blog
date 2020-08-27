@@ -21,7 +21,7 @@ class CategoriesTableSeeder extends Seeder
                 'is_published' => '1',
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now(),
-            ]
+            ],
 
             [
                 'user_id' => '1',
@@ -30,7 +30,7 @@ class CategoriesTableSeeder extends Seeder
                 'is_published' => '1',
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now(),
-            ]
+            ],
 
             [
                 'user_id' => '1',
@@ -39,7 +39,7 @@ class CategoriesTableSeeder extends Seeder
                 'is_published' => '1',
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now(),
-            ]
+            ],
 
             [
                 'user_id' => '1',
@@ -48,7 +48,7 @@ class CategoriesTableSeeder extends Seeder
                 'is_published' => '1',
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now(),
-            ]
+            ],
 
             [
                 'user_id' => '1',
