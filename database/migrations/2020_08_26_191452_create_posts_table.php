@@ -19,7 +19,7 @@ class CreatePostsTable extends Migration
             $table->string('thumbnail')->nullable;
             $table->string('title')->unique();
             $table->string('slug')->unique();
-            $table->enum('sub_title')->nullable();
+            //$table->enum('sub_title')->nullable();
             $table->text('details');
             $table->string('post_type')->nullable();
             $table->enum('is_published', ['1', '0']);
