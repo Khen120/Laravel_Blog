@@ -2,7 +2,7 @@
 
 use Carbon\Carbon;
 use Illuminate\Database\Seeder;
-use Illuminate\support\Facades\DB;
+use Illuminate\Support\Facades\DB;
 
 class CategoriesTableSeeder extends Seeder
 {
@@ -17,46 +17,42 @@ class CategoriesTableSeeder extends Seeder
             [
                 'user_id' => '1',
                 'name' => 'Laravel',
-                'slug' => 'Laravel',
+                'slug' => 'laravel',
                 'is_published' => '1',
                 'created_at' => Carbon::now(),
-                'updated_at' => Carbon::now(),
+                'updated_at' => Carbon::now()
             ],
-
             [
                 'user_id' => '1',
                 'name' => 'WordPress',
-                'slug' => 'WordPress',
-                'is_published' => '1',
+                'slug' => 'wordpress',
+                'is_published' => '0',
                 'created_at' => Carbon::now(),
-                'updated_at' => Carbon::now(),
+                'updated_at' => Carbon::now()
             ],
-
             [
                 'user_id' => '1',
                 'name' => 'Python',
-                'slug' => 'Python',
+                'slug' => 'python',
                 'is_published' => '1',
                 'created_at' => Carbon::now(),
-                'updated_at' => Carbon::now(),
+                'updated_at' => Carbon::now()
             ],
-
             [
                 'user_id' => '1',
                 'name' => 'Javascript',
-                'slug' => 'Javascript',
+                'slug' => 'javascript',
                 'is_published' => '1',
                 'created_at' => Carbon::now(),
-                'updated_at' => Carbon::now(),
+                'updated_at' => Carbon::now()
             ],
-
             [
                 'user_id' => '1',
                 'name' => 'Django',
-                'slug' => 'Django',
+                'slug' => 'django',
                 'is_published' => '1',
                 'created_at' => Carbon::now(),
-                'updated_at' => Carbon::now(),
+                'updated_at' => Carbon::now()
             ]
         ]);
     }

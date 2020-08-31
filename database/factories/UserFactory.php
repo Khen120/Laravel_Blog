@@ -30,25 +30,25 @@ $factory->define(User::class, function (Faker $faker) {
 });
 
 $factory->define(Post::class, function (Faker $faker) {
-    $title = $faker->unipue()->sentence;
-    $ispublished = ['1', '0'];
+    $title = $faker->unique()->sentence;
+    $isPublished = ['1', '0'];
     return [
         'user_id' => rand(1, 5),
         'title' => $title,
         'slug' => str_slug($title),
         'sub_title' => $faker->sentence,
-        'detail' => $faker->paragraph,
+        'details' => $faker->paragraph,
         'post_type' => 'post',
-        'is_published' => $ispublished[rand(0, 1)],
+        'is_published' => $isPublished[rand(0, 1)],
         'created_at' => now(),
         'updated_at' => now(),
     ];
 });
 
-$factory->define(CategoryPost::class, function (Faker $faker) {    
+$factory->define(CategoryPost::class, function (Faker $faker) {
     return [
         'category_id' => rand(1, 5),
-        'post_id' => rand(1, 100),        
+        'post_id' => rand(1, 100),
         'created_at' => now(),
         'updated_at' => now(),
     ];
